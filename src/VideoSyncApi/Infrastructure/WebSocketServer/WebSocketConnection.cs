@@ -30,7 +30,7 @@ namespace VideoSyncApi.Infrastructure.WebSocketServer {
                     case CloseReceived:
                         Console.WriteLine($"Closing {Id}");
                         await disconnectHandler();
-                        break;
+                        return;
                 }
             }
         }
