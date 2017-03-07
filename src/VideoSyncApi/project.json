@@ -13,7 +13,8 @@
     "Microsoft.AspNetCore.Diagnostics": "1.0.*",
     "Microsoft.Extensions.Configuration.EnvironmentVariables": "1.0.0",
     "Microsoft.Extensions.Configuration.Json": "1.0.0",
-    "Microsoft.AspNetCore.WebSockets": "1.0.*"
+    "Microsoft.AspNetCore.WebSockets": "1.0.*",
+    "Microsoft.AspNetCore.Rewrite": "1.0.*",
   },
 
   "frameworks": {
