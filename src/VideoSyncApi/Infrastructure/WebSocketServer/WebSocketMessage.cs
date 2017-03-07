@@ -9,7 +9,7 @@ namespace VideoSyncApi.Infrastructure.WebSocketServer {
 
         public string SenderName { get; }
 
-        public string Type { get; }
+        public string Action { get; }
 
         public IReadOnlyDictionary<string, object> Params { get; }
 
@@ -29,7 +29,7 @@ namespace VideoSyncApi.Infrastructure.WebSocketServer {
         ) {
             SenderId = senderId;
             SenderName = senderName;
-            Type = action;
+            Action = action;
             Params = param ?? ImmutableDictionary.Create<string, object>();
         }
 
