@@ -2,7 +2,7 @@
 
 ## Setup
 
-* Install [DotNet Core 1.0.3 LTS](https://www.microsoft.com/net/download/core) 
+* Install [DotNet Core 1.1.1 SDK](https://www.microsoft.com/net/core#windowscmd) 
 * Pull project
 * run ```$ dotnet restore```
 * run ```$ dotnet run```
