@@ -42,13 +42,13 @@ namespace VideoSyncApi {
                             template: "{controller=Home}/{action=Index}/{id?}"
                         )
                     )
-                ).Map("/app", app => 
-                    app.UseMvc(routes => 
-                        routes.MapRoute(
-                            name: "default",
-                            template: "{controller=Home}/{action=Index}/{id?}"
-                        )
-                    )
+                ).Map("/app", app => {
+                    //app.UseStaticFiles(;
+                    app.UseDefaultFiles();
+                    app.UseStaticFiles();
+
+
+                }
                 ).UseRewriter(
                     new RewriteOptions().AddRedirect(@".*", "app/")
                 ).Use(async (a, b) => await b());
