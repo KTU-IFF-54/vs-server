@@ -46,8 +46,6 @@ namespace VideoSyncApi {
                     //app.UseStaticFiles(;
                     app.UseDefaultFiles();
                     app.UseStaticFiles();
-
-
                 }
                 ).UseRewriter(
                     new RewriteOptions().AddRedirect(@".*", "app/")
